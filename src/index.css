@@ -178,6 +178,13 @@ h1 {
   color: #ffab04;
 }
 
+.cart-item-actions button:disabled {
+  cursor: not-allowed;
+  background-color: #555555;
+  color: #aaaaaa;
+  opacity: 0.5;
+}
+
 .control {
   margin: 0.5rem 0;
   display: flex;
@@ -222,6 +229,14 @@ h1 {
   color: #1f1a09;
 }
 
+.button:disabled {
+  cursor: not-allowed;
+  background-color: #555555;
+  border: 1px solid #555555;
+  color: #aaaaaa;
+  opacity: 0.5;
+}
+
 .text-button {
   font: inherit;
   cursor: pointer;
@@ -248,6 +263,18 @@ h1 {
 
 .modal::backdrop {
   background-color: rgba(0, 0, 0, 0.55);
+}
+
+.center {
+  text-align: center;
+}
+
+.error {
+  max-width: 40rem;
+  margin: 1rem auto;
+  padding: 1rem;
+  background-color: #f4c7c7;
+  color: #3e0505;
 }
 
 @keyframes fade-slide-up {
